@@ -1,0 +1,274 @@
+@font-face {
+    font-family: 'title-font';
+    src:url("../fonts/PlayfairDisplay-SemiBold.eot");
+    src: local('☺'), url("../fonts/PlayfairDisplay-SemiBold.woff") format('woff'), url("../fonts/PlayfairDisplay-SemiBold.ttf") format('truetype'), url("../fonts/PlayfairDisplay-SemiBold.svg") format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* @font-face {
+    font-family: 'title-font';
+    src:url("../fonts/PTSerif-Regular.eot");
+    src: local('☺'), url("../fonts/PTSerif-Regular.woff") format('woff'), url("../fonts/PTSerif-Regular.ttf") format('truetype'), url("../fonts/PTSerif-Regular.svg") format('svg');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+@font-face {
+    font-family: 'content-font-bold';
+    src:url("../fonts/RobotoCondensed-Bold.eot");
+    /* src: url('../fonts/Fontfabric - Nexa Extra Bold.eot'); */
+    src: local('☺'), url("../fonts/RobotoCondensed-Bold.woff") format('woff'), url("../fonts/RobotoCondensed-Bold.ttf") format('truetype'), url("../fonts/RobotoCondensed-Bold.svg") format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'content-font';
+    src:url("../fonts/RobotoCondensed-Regular.eot");
+    src: local('☺'), url("../fonts/RobotoCondensed-Regular.woff") format('woff'), url("../fonts/RobotoCondensed-Regular.ttf") format('truetype'), url("../fonts/RobotoCondensed-Regular.svg") format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+html {
+    display: flex;
+    justify-content: center;
+    background-color: #ddd;
+    min-height: 100%;
+}
+body {
+    width: 100%;
+    max-width: 480px;
+    min-height: 100%;
+    /* background-color: #000; */
+    -webkit-box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.25);
+}
+.main-container {
+    width: 100%;
+    min-height: 100%;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.banner-section {
+    height: 350px;
+    background-image: url('../img/banner-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 15px;
+}
+.banner-section.home-banner {
+    background-image: url('../img/Home_Page_Banner.png');
+    justify-content: flex-start;
+}
+.banner-section.mens-banner, .banner-section.woman-banner, .banner-section.quick-services-banner {
+    background-image: none;
+    padding: 0;
+    height: auto;
+}
+.banner-section.mens-banner img, .banner-section.woman-banner img, .banner-section.quick-services-banner img {
+    width: 100%;
+    height: calc(100vh / 2);
+    object-fit: cover;
+    object-position: top center;
+    margin-bottom: 0;
+}
+.banner-section img {
+    margin-bottom: 20px;
+}
+.banner-section.home-banner img {
+    margin-top: 10px;
+}
+.banner-title {
+    color: #fff;
+    font-family: 'title-font', sans-serif;
+    margin-bottom: 0;
+    font-weight: 800;
+    font-size: 32px;
+    /* letter-spacing: 1px; */
+    margin-top: 20px;
+}
+.content-section {
+    padding: 10px 15px;
+}
+.content-title {
+    text-align: center;
+    color: #000;
+    font-family: 'title-font', sans-serif;
+    margin-bottom: 30px;
+    font-weight: 800;
+    font-size: 32px;
+    /* letter-spacing: 1px; */
+}
+.ritual-item {
+    margin-bottom: 15px;
+}
+.ritual-item:first-child {
+    margin-top: 15px;
+}
+.ritual-title {
+    font-family: 'content-font-bold', sans-serif;
+    background-color: #ddd;
+    text-transform: uppercase;
+    padding: 2px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    letter-spacing: 0.3px;
+}
+.ritual-info {
+    background-color: #f1f1f1;
+    padding: 10px 15px;
+}
+.ritual-info .col-8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.ritual-content {
+    font-family: "content-font", sans-serif;
+    font-size: 13px;
+    color: #333;
+    margin-bottom: 15px;
+    /* text-align: justify; */
+    /* overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical; */
+}
+.ritual-content strong {
+    display: block; 
+    margin-bottom: 5px;
+}
+.ritual-content strong i {
+    display: block;
+    font-weight: 100;
+}
+.ritual-content-points {
+    padding-left: 10px;
+}
+.ritual-content-points li {
+    font-family: "content-font", sans-serif;
+    font-size: 13px;
+    color: #333;
+    margin-bottom: 5px;
+}
+.ritual-time {
+    font-family: "content-font", sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #333;
+    margin-bottom: 0;
+}
+.ritual-img {
+    width: 100%;
+    height: auto;
+    padding-right: 15px;
+}
+.ask-info {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    color: #000;
+    text-align: center;
+}
+.note {
+    font-size: 8px;
+    color: #666;
+    font-style: italic;
+}
+.home-card {
+    background-color: #fff;
+    margin: -100px 10px 15px; 
+    /* margin-top: -100px; */
+    text-align: center;
+    padding: 25px 20px 15px;
+    /* margin-left: 10px;
+    margin-right: 10px; */
+    box-shadow: 0 4px 15px 0px rgba(0,0,0,0.3);
+}
+.home-card h3 {
+    font-family: 'title-font',sans-serif;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.home-card p.intro-content {
+    font-family: 'content-font', sans-serif;
+    margin: 0 auto 15px;
+    font-size: 15px;
+    color: #666;
+    max-width: 280px;
+}
+.home-card p.intro-content strong {
+    color: #000;
+    display: block;
+    margin-top: 2px;
+}
+.home-options-title {
+    font-size: 18px;
+    text-decoration: underline;
+    /* text-transform: uppercase; */
+    font-family: 'content-font', sans-serif;
+    text-align: center;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+.home-option {
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: 'content-font', sans-serif;
+    padding: 5px;
+    background-color: #000;
+    color: #fff !important;
+    width: 250px;
+    height: 50px;
+    margin: 0 auto 15px;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ritual-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000 !important;
+    text-decoration: none !important;
+    font-family: 'content-font', sans-serif;
+    font-size: 18px;
+    margin: -1px -15px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 15px; 
+}
+.ritual-options img {
+    transform: rotate(180deg);
+    transition: all 0.3s ease-in;
+}
+.ritual-options.collapsed img {
+    transform: rotate(0deg);    
+}
+.ritual-option-content {
+    margin: 0 -15px 0;
+    padding: 1px 15px 1px;
+    background-color: #f6f6f6;
+}
+.mt-15 {
+    margin-top: 15px !important;
+}
+.mb-15 {
+    margin-bottom: 15px !important;
+}
+.mb-10 {
+    margin-bottom: 10px !important;
+}
